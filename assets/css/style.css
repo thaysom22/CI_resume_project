@@ -1,0 +1,108 @@
+/* Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* --------- Heading --------- */
+
+header {
+    margin: 0;
+    
+}
+
+
+.logo {
+    background: url("../images/Photo_of_me_jan2019.jpg");
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    transition: all .5s ease-in-out;
+}
+
+.bg-color-name-title {
+    background-image: linear-gradient(45deg, #1733b8eb 25%, #495057b0 75%);
+}
+
+.heading {
+    margin-left: 50px;
+    height: 240px;
+}
+
+.name {
+    font-family: 'Exo', sans-serif;
+    font-weight: 200;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+.ui-menu-color-home{
+    background-color: #495057b0;
+}
+
+.ui-menu-color-resume{
+    background-color: #1733b8eb;
+}
+
+.ui-menu-color-contact{
+    background-color: #495057b0;
+}
+
+.ui-menu-color-download{
+    background-color: #1733b8eb;
+}
+
+.list-inline-item:not(:last-child){
+    margin: 0;
+}
+
+.menu-container{
+    font-size: 0;
+}
+
+#nav{
+    margin: 0;
+}
+
+#nav li{
+    padding: 0;
+}
+
+.menu-item{
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menu-item a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    height: 120px;
+}
+
+.menu-item a i{
+    padding-top: 22px;
+    display: block; /* i element is inline by default */
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menu-item span{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
