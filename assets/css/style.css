@@ -31,6 +31,7 @@ h1, h2, h3, h4{
     float: none;
 }
 
+.timeline-heading,
 .section-heading{
     font-family: 'Exo', sans-serif;
     font-weight: 300;
@@ -67,7 +68,7 @@ header {
 }
 
 .bg-color-name-title {
-    background-image: linear-gradient(45deg, #1733b8eb 25%, #495057b0 75%);
+    background-image: linear-gradient(45deg, #1733b8eb 25%, #8f8f8f 75%);
 }
 
 .heading {
@@ -96,7 +97,7 @@ header {
 }
 
 .ui-menu-color-home{
-    background-color: #495057b0;
+    background-color: #8f8f8f;
 }
 
 .ui-menu-color-resume{
@@ -104,7 +105,7 @@ header {
 }
 
 .ui-menu-color-contact{
-    background-color: #495057b0;
+    background-color: #8f8f8f;
 }
 
 .ui-menu-color-download{
@@ -159,16 +160,152 @@ header {
     letter-spacing: 2px;
 }
 
-/* --------- Main sections --------- */
+/* --------- Three Reasons --------- */
 
 .bg-color-three-reasons{
     background-color: #fff;
 }
 
+.three-reasons-icon{
+    font-size: 26px;
+    color: #1733b8eb;
+}
+
+.three-reasons-heading{
+    margin-bottom: 15px;
+}
+
+/* --------- Personal info --------- */
+
+.bg-color-personal-info{
+    background-color: #8f8f8f;
+}
+
+.color-personal-info{
+    color: #fafafa;
+}
+
+.personal-info-item{
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right: 8px;
+    display: inline-block
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+}
+
+.personal-info-item .key{
+    width: 30%;
+    vertical-align: top;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+.personal-info-item .key p{
+    font-weight: 700;
+}
+
+.personal-info-item .value{
+    width: 60%;
+    position: relative;
+}
+
+/* --------- Progress bars --------- */
+
+.progress{
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+    line-height: 25px;
+    background-color: #6c757d66;
+}
+
+.progress-type{
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 10px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(50, 50, 50, 0.2);
+}
+
+.progress-section{
+    margin: 40px 20px;
+}
+
+.hvr-sweep-to-right:before{
+    background: rgba(0,0,0,.25);
+}
+
+/* --------- Timeline --------- */
+
+.timeline-heading{
+    margin-bottom: 50px;
+}
+
+.timeline-items{
+    margin-bottom: 30px;
+}
+
+.timeline-item{
+    padding: 4em 2em 0 2em;
+    position: relative;
+    border-left: 2px solid;
+}
+
+.timeline-item h4{
+    font-size: 1rem;
+}
+
+.timeline-item p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+
+
+/* Pseudo-element will appear AFTER elements with .timeline-item class 
+and it's content will be the value of the element's 'data-dates' attribute */
+.timeline-item::before{
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+/* Pseudo-element will appear AFTER elements with .timeline-item class 
+and it's content will be a small circle to decorate the timeline */
+.timeline-item::after{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 2.4em;
+    left: -6px; /* move circle onto left border of element */
+    content: '';
+    background-color: #fafafa;
+}
+
 /* --------- Footer --------- */
 
 footer{
-    background-color: #495057b0;
+    background-color: #1733b8eb;
     color: #fafafa;
     min-height: 120px;
     font-size: 14px;
@@ -230,11 +367,11 @@ footer{
 
 @media only screen and (max-width: 575px) {
     .name {
-        font-size: 23px;
+        font-size: 36px;
     }
 
     .title {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .menu-item span {
