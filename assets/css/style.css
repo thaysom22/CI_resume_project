@@ -302,6 +302,37 @@ and it's content will be a small circle to decorate the timeline */
     background-color: #fafafa;
 }
 
+/* --------- Contact --------- */
+
+.bg-color-contact{
+    background-color: #fff;
+}
+
+.contact-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 10px;
+    margin: 0 auto; /* Use auto to add necessary left/right margin to center */
+    max-width: 70%; 
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+button[type="submit"]:hover{
+    background-color: #e84610;
+    transform: scale(1.05);
+}
+
 /* --------- Footer --------- */
 
 footer{
@@ -404,4 +435,13 @@ footer{
     .footer-link i{
         font-size: 12px;
     }
+}
+
+@media(min-width: 992px) {
+    .center-form{
+        padding-top: 30px;
+        min-height: 240px;
+        max-width: 50%;
+    }
+
 }
