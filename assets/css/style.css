@@ -3,6 +3,10 @@
 
 /* --------- Special paddings/margins/text/effects --------- */
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 h1, h2, h3, h4{
     margin: 0;
 }
@@ -175,6 +179,7 @@ header {
     margin-bottom: 15px;
 }
 
+
 /* --------- Personal info --------- */
 
 .bg-color-personal-info{
@@ -189,6 +194,7 @@ header {
     margin-bottom: 20px;
     display: block;
     clear: both;
+    font-family: 'Roboto', sans-serif;
 }
 
 .personal-info-item .key,
